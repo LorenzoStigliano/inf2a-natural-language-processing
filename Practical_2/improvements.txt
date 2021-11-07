@@ -1,0 +1,7 @@
+When using the completed system I came across a few issues for ambiguity in the program which is to be expected in any natural language. For example the sentence "Who likes a duck who flies and dances?" can have 2 different parses. One interpetation of the sentance could be that "and dances" part of the sentance is attached to "a duck" , however another meaning of the sentaces could attach "and dances" to "who" and so a the parser wouldn't know which one is the right meaning of the sentance.
+
+One could over come this by using a parser with probabilites attached to it and so could find the most likely parse of the sentance and then return an answer.However this may not be feasible since finding all the probabilities of every structure is a costly and difficult task for a large corpus. 
+
+Also when the system is given statements like "John is a green duck." the system does not know how to anwser "Who is a duck?" or "Who is green?" sinces it can't seperate two attributes if they are given in the same statement. However this is easily over come by writing two statements i.e "John is a duck." and "John is green".
+
+Furthermore when our system is given a statement like "Mary is cat." it accepts it as a statement and treats cat as an adjective so the question "Who is cat?" will return "Mary". This could be fixed by searching through the corpus for all the adjective and see if there is a match otherwise words like "cat" will parsed as adjectives. Like the verb_stem function in our system which checks if a verb is in the corpus.

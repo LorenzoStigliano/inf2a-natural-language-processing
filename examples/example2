@@ -1,0 +1,16 @@
+Module descriptions:
+
+Knowledge representation: this introduces the idea of
+ representing knowledge and getting a computer to reason with that
+knowledge, for example, being able to deduce new information from what
+you already know. Simple rules are employed to demonstrate how some
+kinds of knowledge, including uncertain knowledge, can be expressed
+and used in reasoning.
+
+Architectures: if you wanted to put together some kind of `smart'
+agent such as an autonomous robot, you would have to bring together
+various kinds of component in a coherent way. This introduces some
+questions concerned with overall architecture, such as robustness,
+reliability. maintainability and economy. It looks briefly at
+symbolic, connectionist and behaviour-based architectures.
+
